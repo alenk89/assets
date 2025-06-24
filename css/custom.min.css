@@ -1,0 +1,119 @@
+/* ========== TYPOGRAPHY ========== */
+.fs-48 {
+  font-size: 3rem !important;
+} /* 48px */
+.fs-36 {
+  font-size: 2.25rem !important;
+} /* 36px */
+.fs-24 {
+  font-size: 1.5rem !important;
+} /* 24px */
+.fs-20 {
+  font-size: 1.25rem !important;
+} /* 20px */
+.fs-18 {
+  font-size: 1.125rem !important;
+} /* 18px */
+.fs-16 {
+  font-size: 1rem !important;
+} /* 16px */
+.fs-15 {
+  font-size: 0.9375rem !important;
+} /* 15px */
+.fs-14 {
+  font-size: 0.875rem !important;
+} /* 14px */
+.fs-13 {
+  font-size: 0.8125rem !important;
+} /* 13px */
+.fs-12 {
+  font-size: 0.75rem !important;
+} /* 12px */
+.fs-11 {
+  font-size: 0.6875rem !important;
+} /* 11px */
+.fs-10 {
+  font-size: 0.625rem !important;
+} /* 10px */
+
+/* ========== TEXT UTILITIES ========== */
+.text-truncate-multiline {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shine-text {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.shine-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  100% {
+    left: 150%;
+  }
+}
+
+/* ========== INTERACTIVE COMPONENTS ========== */
+.kategori-item {
+  transition: all 0.2s ease-in-out;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.kategori-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
+}
+
+.banner-hover {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.banner-hover img {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.banner-hover:hover img {
+  transform: scale(1.05);
+}
+
+/* ========== RESPONSIVE ADJUSTMENTS ========== */
+@media (max-width: 768px) {
+  .fs-48 {
+    font-size: 2.25rem !important;
+  } /* 36px */
+  .fs-36 {
+    font-size: 1.5rem !important;
+  } /* 24px */
+
+  .text-truncate-multiline {
+    -webkit-line-clamp: 3;
+  }
+
+  .banner-hover:hover img {
+    transform: none;
+  }
+}
