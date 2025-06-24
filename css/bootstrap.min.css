@@ -9845,57 +9845,7 @@ fieldset:disabled .btn {
 .z-3 {
   z-index: 3 !important;
 }
-.fs-10 {
-  font-size: var(--vz-font-10) !important;
-}
-.fs-11 {
-  font-size: var(--vz-font-11) !important;
-}
-.fs-12 {
-  font-size: var(--vz-font-12) !important;
-}
-.fs-13 {
-  font-size: var(--vz-font-13) !important;
-}
-.fs-14 {
-  font-size: var(--vz-font-14) !important;
-}
-.fs-15 {
-  font-size: var(--vz-font-15) !important;
-}
-.fs-16 {
-  font-size: var(--vz-font-16) !important;
-}
-.fs-17 {
-  font-size: var(--vz-font-17) !important;
-}
-.fs-18 {
-  font-size: var(--vz-font-18) !important;
-}
-.fs-19 {
-  font-size: var(--vz-font-19) !important;
-}
-.fs-20 {
-  font-size: var(--vz-font-20) !important;
-}
-.fs-21 {
-  font-size: var(--vz-font-21) !important;
-}
-.fs-22 {
-  font-size: var(--vz-font-22) !important;
-}
-.fs-23 {
-  font-size: var(--vz-font-23) !important;
-}
-.fs-24 {
-  font-size: var(--vz-font-24) !important;
-}
-.fs-36 {
-  font-size: var(--vz-font-36) !important;
-}
-.fs-48 {
-  font-size: var(--vz-font-48) !important;
-}
+
 .cursor-auto {
   cursor: auto !important;
 }
